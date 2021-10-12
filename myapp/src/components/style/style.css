@@ -1,0 +1,45 @@
+.app {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 500px;
+  background-color: rgb(177, 225, 165);
+  padding: 10px;
+}
+
+.app_title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.form_author {
+  margin: 5px;
+}
+
+.form_text {
+  margin: 5px 0 5px;
+}
+
+.form_button {
+  margin: 5px;
+}
+
+.messege {
+  margin: 0;
+  padding: 5px;
+}
+
+.messege_item {
+  list-style-type: none;
+  margin: 0 0 5px;
+
+}
+
+.messege_item-author {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.messege_item-text {
+  font-size: 16px;
+  font-weight: 400;
+}
