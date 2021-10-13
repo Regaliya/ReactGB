@@ -1,11 +1,11 @@
 import './style/style.css';
 
-function Messege({ messageList }) {
+function Message({ messageList }) {
     return (
-      <ul className="messege">
-        {messageList ? messageList.map((el, index) => <li key={index} className="messege_item"><span className="messege_item-author">{el.name + ":"}</span><span className="messege_item-text">{" " + el.text}</span></li>) : null}
+      <ul className="message">
+        {messageList ? messageList.map((el, index) => <li key={index} className="message_item"><span className="message_item-author">{el.name + ":"}</span><span className="message_item-text">{" " + el.text}</span></li>) : null}
       </ul>
     )
   };
   
-  export default Messege;
+  export default Message;
