@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import Messege from "./Message";
+import Message from "./Message";
 import MessageList from "./MessageList";
 
 
@@ -10,7 +10,7 @@ function Chats() {
   return (
     <>
       <p>chat id {id}</p>
-      <Messege />
+      <Message />
       <MessageList />
       
     </>
