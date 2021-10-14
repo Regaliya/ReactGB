@@ -1,28 +1,20 @@
 import "../style/style.css";
-import { useDispatch, useSelector, shallowEqual } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useEffect } from "react";
-import addMessage from "../../actions/messagesActions";
+import { botReply } from "../../actions/messagesActions";
 
-function Message({ chatId }) {
-  const message = useSelector(
-    (state) => state.message.messageList[chatId],
-    shallowEqual
-  );
-
+function Message({ chatId, message }) {
+  
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (chatId === "id0" && message[message.length - 1].author !== "RoboChat") {
-      setTimeout(() => {
-        dispatch(
-          addMessage(chatId, "Сегодня прекрасная погода.", "RoboChat")
-        );
-      }, 2000);
+    if (chatId === "id0" && message[message.length - 1].author !== "Robot") {
+        dispatch(botReply(chatId));
     }
   }, [chatId, dispatch, message]);
 
   return (
-    <ul className="messages">
+    <ul className="message">
       {message
         ? message.map((el) => (
             <li key={el.id} className="message_item">
@@ -33,6 +25,6 @@ function Message({ chatId }) {
         : null}
     </ul>
   );
-}
+};
 
 export default Message;

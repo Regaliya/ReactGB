@@ -1,7 +1,6 @@
 import { ADD_MESSAGE } from "./types/messagesTypes";
 
 const initialState = {
-  // будет храниться в виде {[chatId]: [{id, text, author}]}
   messageList: {
     "id0": [
       {
