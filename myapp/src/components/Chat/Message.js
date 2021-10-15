@@ -12,12 +12,12 @@ function Message({ chatId }) {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (chatId === "id0" && message[message.length - 1].author !== "RoboChat") {
+    if (chatId === "id" && message[message.length - 1].author !== "RoboChat") {
       setTimeout(() => {
         dispatch(
           addMessage(chatId, "Сегодня прекрасная погода.", "RoboChat")
         );
-      }, 2000);
+      }, 500);
     }
   }, [chatId, dispatch, message]);
 
