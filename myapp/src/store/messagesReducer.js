@@ -1,17 +1,18 @@
 import { ADD_MESSAGE } from "./types/messagesTypes";
 
 const initialState = {
+
   messageList: {
     "id0": [
       {
         id: 0,
         text: "Привет!",
-        author: "RoboChat",
+        author: "DogChat",
       },
       {
         id: 1,
         text: "Как дела?",
-        author: "RoboChat",
+        author: "DogChat",
       },
     ],
   },

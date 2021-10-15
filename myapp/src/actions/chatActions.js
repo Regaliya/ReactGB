@@ -1,9 +1,4 @@
-import { ADD_CHAT, DELETE_CHAT, GET_CHAT } from "../store/types/chatsTypes";
-
-export const getChat = (name) => ({
-  type: GET_CHAT,
-  payload: name,
-});
+import { ADD_CHAT, DELETE_CHAT } from "../store/types/chatsTypes";
 
 export const addChat = (name) => ({
   type: ADD_CHAT,

@@ -12,5 +12,7 @@ export const botReply = (chatId) => (dispatch) => {
     dispatch(
       addMessage(chatId, "Сегодня прекрасная погода!", "RoboBot")
     );
-  }, 1000);
+  }, 500);
 };
+
+// export default ( addMessage, botReply );
