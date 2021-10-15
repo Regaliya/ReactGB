@@ -8,7 +8,7 @@ function Message({ chatId, message }) {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (chatId === "id0" && message[message.length - 1].author !== "Robot") {
+    if (chatId === "id" && message[message.length - 1].author !== "Robot") {
         dispatch(botReply(chatId));
     }
   }, [chatId, dispatch, message]);
